@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+#vetor indexado (índice é um número inteiro)
+#fruta[0]="banana"
+#fruta[1]="laranja"
+#fruta[2]="abacate"
+#ou
+#fruta=("banana" "laranja" "abacate")
+#vetor associativo
+#declare -A fruta
+#fruta[doce]="banana"
+#fruta[azeda]="laranja"
+#fruta[verde]="abacate"
+
+#declarar Arrays
+# indexados
+#declare -a nome_da_array
+
+# associativos
+#declare -A nome_da_array
+
+# Declarar arrays associativos é obrigatório, declarar arrays indexados é optativo
+
+# Acessar valores de array ${nome[índice]}
+fruta=("banana" "laranja" "abacate")
+echo ${fruta[2]}
+
+# Acessar TODOS os valores de um array
+echo ${fruta[*]} # Retorna uma única string
+echo ${fruta[@]} # Retorna em string separadas
+echo ${!fruta[@]} # Retorna o índice de cada elemento
+
+# Listando os valores por faixas de índices
+# ${nome[@]:início}
+
+frutas=("banana" "laranja" "abacate" "limão" "abacaxi")
+echo ${frutas[@]:2}
+
+# ${nome[@]:início:fim}
+echo ${frutas[@]:1:3}
+
+# Quantidade de elementos de um array
+echo ${#frutas[@]}

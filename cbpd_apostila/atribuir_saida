@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+usuario=$(whoami)
+
+maquina=`hostname`
+
+mensagem="Olá, $usuario! Você está falando do $maquina"
+
+echo $mensagem
+
+# para arrays é necessário usar ${nome_da_variável[índice]}

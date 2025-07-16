@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# $ - Retorna o PID da sessão corrente do shell
+echo $$
+
+# $ ? - Retorna o status de saída do último comando executado 
+# Se tiver sucesso, o retorno será zero. Caso contrário, retornará qualquer outro valor
+echo $? 
+
+# 0 - Armazena o nome do arquivo do programa ou do script sendo executado
+echo $0
+# $ n (a partir de 1) - Armazena os valores (parâmetros) passados para o script
+
+# $# Armazena o número de parâmetros passados para o script
+echo $#
+
