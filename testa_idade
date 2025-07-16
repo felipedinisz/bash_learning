@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+majority=18
+read -p "Digite sua idade: " age
+
+if ! [[ "$age" =~ ^[0-9]+$ ]]; then 
+	echo "Erro: '$age' não é um número"
+	exit 1
+fi
+
+if [[ "$age" -ge "$majority" ]]; then
+	echo "Você é maior de idade." 
+else 
+	dif=$((majority - age))
+	echo "Você é menor de idade. Faltam $dif anos."
+fi
+
+

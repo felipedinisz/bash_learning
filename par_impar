@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+read -p "Digite um número: " num
+
+if ! [[ "$num" =~ ^-?[0-9]+$ ]]; then
+	echo "Erro: '$num' não é um número"
+	exit 1
+fi
+
+if ((num % 2 -eq 0)); then
+	echo "$num é par"
+else 
+	echo "$num é ímpar"
+fi
+

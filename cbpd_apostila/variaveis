@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+fruta="banana"
+nota=10
+nomes=("João" "Maria" "José")
+retorno=$(whoami)
+
+# Não existem espaços antes ou depois do operador de atribuição
+
+var1="Isso é uma string..."
+var2='Isso também!'
+
+valor1=10
+valor2=23154
+
+alunos=("João" "Maria" "Renata")
+
+pessoas[0]="João"; pessoas[1]="Maria"; pessoas[2]="Renata")
+

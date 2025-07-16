@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+msg="É preciso informar um comando válido!"
+
+[[ $# -ne 1 ]] && echo "$msg" && exit 1
+
+
+wc -l "$1"

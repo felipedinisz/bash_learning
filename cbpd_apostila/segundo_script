@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+
+read -p "Digite seu nome: " nome
+echo "Seu nome: $nome"

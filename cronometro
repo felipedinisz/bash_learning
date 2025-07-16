@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+read -p "Digite o tempo que deseja contar: " time
+
+if ! [[ "$time" =~ ^[0-9]+$ ]]; then 
+	echo "Erro: '$time' não é um número"
+	exit 1
+fi
+
+for ((i = 1; i <= $time; i++)); do
+	echo -ne "Tempo: $i s\r"
+	sleep 1
+done
+
+echo -e "\nTempo esgotado."
