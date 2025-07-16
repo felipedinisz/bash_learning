@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+read -p "Quantos arquivos você deseja? " qtd
+
+if ! [[ "$qtd" =~ [-1-9]+$ ]]; then
+	echo "Erro: '$qtd' não é um número"
+	exit 0
+fi
+
+if [[ "$qtd" -le 0 ]]; then
+       echo "Erro: Digite números maiores que 0"
+       exit 0
+fi       
+
+eval touch arquivo{1.."$qtd"}.txt

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [[ $# -lt 2 ]]; then
+	echo "Uso: $0 <comando> <termo>"
+	exit 1
+fi 
+
+man "$1" | grep -- "$2"
