@@ -1,1 +1,29 @@
 #!/usr/bin/env bash
+
+# Expansão de parâmetros -> substitui um nome de uma variável ou um parâmetro de linha de comando por seu valor, ou a aplicação de operações específicas sobre esse valor
+
+cor="verde"
+
+# Sem aspas
+echo $cor
+
+# Com aspas duplas
+echo "$cor"
+
+# Com aspas simples
+echo '$cor'
+
+# Com aspas duplas e caractere de escape
+echo "\$cor"
+
+$ Inserir strings em strings 
+
+objeto="celular"
+echo "Maria tinha um $objeto."
+
+objeto="lápis"
+echo "Maria tinha um $objeto."
+
+objeto="carneirinho"
+echo "Maria tinha um $objeto."
+

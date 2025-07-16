@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+fruta="banana"
+fruta+=" verde"
+echo $fruta
+
+fruta+=" baratinha"
+echo $fruta
+
+# O operador += só serve para concatenações quando estamos trabalhando com string. Se a variável for - de fato - numérica, ela funcionará como um operador de incremento"
+
+# String
+valor=1; valor+=1
+echo $valor
+
+# Inteiro
+declare -i val; val=1; val+=1
+echo $val

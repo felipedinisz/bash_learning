@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+ben=10
+leonardo=20
+joaozinho=30
+
+frase="No rateio da conta, o Leonardo dá $leonardo, \
+o Ben $ben, e o Joãozinho $joaozinho"
+
+echo $frase

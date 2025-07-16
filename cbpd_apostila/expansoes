@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+ls *.txt
+ls a*
+ls *.*
+ls .*
+ls [a-j]*
+ls [aj]*
+
+echo a{3,5,7}
+echo a{0..9}
+echo b{a..z}nana
+
+touch teste-{01,02,03}.txt
+echo {0..9..2}

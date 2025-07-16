@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+bc <<< '7 / 3'
+bc -l <<< "7 / 3"
+bc <<< "scale=2; 7 / 3"
+
