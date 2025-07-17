@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if grep ^$USER /etc/passwd &> /dev/null; then
+       echo "Usuário encontrado"
+else
+	echo "Usuário não encontrado"
+fi

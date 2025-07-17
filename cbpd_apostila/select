@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+PS3="Escolha um número ou tecle '4' para sair: "
+frutas=("banana" "laranja" "abacate")
+select fruta in "${frutas[@]}"; do
+	echo $fruta && break
+done
