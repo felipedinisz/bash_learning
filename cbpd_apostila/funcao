@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+oi() {
+	echo "Oi, eu sou $1!"
+}
+
+oi Goku
+oi Vegeta
+oi Bulma

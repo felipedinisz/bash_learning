@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+while true; do
+	read -p "Digite uma fruta ou 'sair': " opt
+	if [[ "${opt,,}" == 'sair' || -z "$opt" ]]; then
+		echo "Saindo..."
+		break
+	fi
+		
+	case ${opt,,} in
+		banana|laranja|maracuj[aá]) echo "É uma fruta amarela"  ;;
+		abacate|melancia|lim[aã]*) echo "É uma fruta verde" ;;
+		morango|pitanga) echo "É uma fruta vermelha" ;;
+		*) echo "Eu não sei a cor dessa fruta: '$opt'." ;;
+	esac
+
+	echo
+done
+
+echo "Fim do programa"
+exit 0
